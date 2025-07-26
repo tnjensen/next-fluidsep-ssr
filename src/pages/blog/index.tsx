@@ -4,8 +4,8 @@ export const metadata: Metadata = {
     title: "Blog posts"
 }
 import getAllPosts from "../api/getAllPosts";
-{/* @typescript-eslint/no-explicit-any */}
-export default function Blog({data}: {data: any}) {
+{/* @ts-expect-error - expected */}
+export default function Blog({data}: {data}) {
 
     // Returning the JSX for rendering
     return (
