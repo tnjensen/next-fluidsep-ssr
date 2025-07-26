@@ -1,10 +1,10 @@
 "use client"
+
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { usePathname } from "next/navigation";
 
 function Footer(){
-    const path = usePathname();
+
     let date = new Date().getFullYear().toString();
     if(date > '2017'){
         date = ` 2017 - `+ date;
