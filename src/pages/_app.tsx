@@ -1,6 +1,24 @@
-import "@/styles/globals.css";
+import '@/styles/home.scss'
+import '@/styles/about.scss'
+import '@/styles/contact.scss'
+import '@/styles/blog.scss';
+import '@/styles/header.scss'
+import '@/styles/footer.scss'
+import "@/styles/globals.scss";
 import type { AppProps } from "next/app";
+import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
+import Header from '@/components/Header';
+import Header1 from '@/components/Header1';
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <div>
+      <Header1 />
+      <div className='wrapper'>
+        <Component {...pageProps} />
+      </div>
+      <Footer />
+    </div>
+  );
 }

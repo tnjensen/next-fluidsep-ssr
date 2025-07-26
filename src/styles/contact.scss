@@ -1,0 +1,72 @@
+@import '@/styles/globals.scss';
+
+.contact{
+    .wrap{
+        max-width: 1280px;
+        margin: 0 auto;
+          
+        .hero{
+            background-image: url("/images/bg_bubbles.jpg");
+            height: 150px;
+            width: 100%;
+            background-position: center right; 
+            background-repeat: no-repeat;
+            background-size: cover; 
+            
+            @include tablet{
+                height: 200px;
+            }
+            
+            h1{
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                padding-left: 40px;
+                font-size: 1.6rem;
+
+                @include tablet{
+                    padding-left: 40px;
+                    font-size: 2.4rem;
+                }
+                @include desktop{
+                    padding-left: 40px;
+                }
+                
+            }
+        }
+    }
+    .contact-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        line-height: 2rem;
+ 
+        .map1 img {
+            margin-top: 20px;
+
+            @include tablet{
+                width: 450px;
+                height: auto;
+            }
+        }
+        .location{
+            padding-top: 25px;
+            display: flex;
+            flex-direction: column;   
+        }    
+    }
+    .contact-content > p{
+        background-color: var(--light-grey);
+        width: 70%;
+        padding: 40px;
+        border-radius: 6px;
+
+        @include tablet{
+            width: 50%;
+        }
+        @include desktop{
+            width: 40%;
+        }
+    }
+}

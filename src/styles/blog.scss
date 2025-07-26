@@ -1,0 +1,27 @@
+@import '@/styles/globals.scss';
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img{
+        padding: 20px 0;
+        width: 75vw;
+        height: auto;
+        
+        @include tablet{
+            width: 70vw;
+        }
+        @include desktop{
+            width: 60vw;
+        }
+        @include large{
+            width: 50vw;
+        }
+    }
+} 
+.img-attr{
+    display: none;
+}
