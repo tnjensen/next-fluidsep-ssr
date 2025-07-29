@@ -11,17 +11,13 @@
 
     .video-container{
         margin: 0 auto;
-        padding-top: 10%;
-        position: relative;
+        padding-top: 0%; 
+        /* position: relative; */
         padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
         width: 100% !important;
         height: auto !important;
 
         @include tablet{
-            padding-top: 5%;
-        }
-
-        @include desktop{
             padding-top: 0%;
         }
         
