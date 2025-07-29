@@ -22,6 +22,13 @@
       @content;
   }
 }
+
+@mixin wide{
+  @media (min-width: 1440px){
+    @content
+  }
+}
+ 
 :root {
   box-sizing: border-box;
   --light-blue: #38b5e6;

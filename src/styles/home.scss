@@ -43,7 +43,7 @@
             font-weight: 600;
             letter-spacing: .05rem;
             cursor: pointer;
-            width: 25%;
+            width: 120px;
             padding: 15px 20px;
             border-radius: 5px 5px 0 0;
             border: none;
@@ -52,27 +52,43 @@
             text-transform: uppercase;
             text-decoration: none;
             position: absolute;
-            top: 45%;
+            top: 35%;
             transform: translateY(-50%);
-            left: 30%;
+            left: 120px;
 
-            @media screen and (orientation: landscape) and (max-width: 1280px) {
-                top: 80%;
+            @include mobile{
+                left: 150px;
+                top: 200px;
             }
             
             @include tablet {
                 width: 20%;
+                left: 200px;
+                top: 220px;
                 padding: 20px 30px;
                 font-size: 20px;
             }
 
             @include desktop {
                 width: 15%;
-                top: 50%;
+                padding: 20px 35px;
+                top: 230px;
                 font-size: 22px;
-                left: 20%;
+                left: 250px;
             }
 
+            @include large{
+                width: 150px;
+                left: 300px;
+            }
+
+            @include wide{
+                left: 300px;
+            }
+            @media screen and (min-width:1600px){
+                left: 35%;
+                padding: 25px 40px;                
+            }
             &:hover {
                 color: var(--light-grey);
                 background-color: var(--blue);
