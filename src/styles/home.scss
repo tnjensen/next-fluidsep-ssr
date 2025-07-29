@@ -36,6 +36,10 @@
             @include large {
                 margin: 90px 0 0 0;
             }
+
+            @media screen and (orientation: landscape){
+                margin: 40px 0 0 20px;
+            }
         }
 
         .read-more-btn {
