@@ -52,12 +52,12 @@
             text-transform: uppercase;
             text-decoration: none;
             position: absolute;
-            top: 30%;
+            top: 45%;
             transform: translateY(-50%);
             left: 30%;
 
-             @media screen and (orientation: landscape) and (max-width: 768px) {
-                top: 80%;
+             @media screen and (orientation: landscape) and (max-width: 1280px) {
+                top: 60%;
             }
             
             @include tablet {
@@ -68,8 +68,9 @@
 
             @include desktop {
                 width: 15%;
+                top: 50%;
                 font-size: 22px;
-                left: 30%;
+                left: 20%;
             }
 
             &:hover {
