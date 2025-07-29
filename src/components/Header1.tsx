@@ -26,7 +26,7 @@ export default function Header1() {
         <header className="px-4">
             <div className="header-content flex justify-between align-center max-w-7xl mx-auto">
                 <Link href={"/"}>
-                    <img src={"/images/Fluidsep_logo_1.png"} alt='Logo' width={400} height={200} className='p-4' />
+                    <img src={"/images/Fluidsep_logo_1.png"} alt='Logo' className='p-4' />
                 </Link>
                 <FaBars id="menu-button" className="sm:hidden cursor-pointer fixed right-6 top-4" onClick={showMenu} />
                 {isMenuOpen ? (

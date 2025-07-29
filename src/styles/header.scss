@@ -4,11 +4,16 @@ header {
     position: relative;
 
     img{
-        width: 400px;
+        width: 300px;
         height: 200px;
         height: auto;
         display: block;
         padding: 10px;
+
+        @include tablet {
+            width: 400px;
+            height: auto;
+        }
     }
 
     .header-content {
@@ -43,7 +48,7 @@ header {
         
 
         li {
-            padding-bottom: 5px;
+            padding-bottom: 10px;
 
             a {
                 text-decoration: none;
