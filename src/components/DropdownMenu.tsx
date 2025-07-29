@@ -10,24 +10,24 @@ export default function DropdownMenu() {
         <nav className="dropdown absolute top-12 right-4 z-50 bg-[var(--white)] border border-[var(--light-grey)] rounded-md p-4">
             <ul className="flex-col">
                 <li className="py-1">
-                    <Link href="/" className={path === "/" ? "active" : ""}>
+                    <a href="/" className={path === "/" ? "active" : ""}>
                         Home
-                    </Link>
+                    </a>
                 </li>
                 <li className="py-1">
-                    <Link href="/about" className={path === "/about" ? "active" : ""}>
+                    <a href="/about" className={path === "/about" ? "active" : ""}>
                         About
-                    </Link>
+                    </a>
                 </li>
                 <li className="py-1">
-                    <Link href="/contact" className={path === "/contact" ? "active" : ""}>
+                    <a href="/contact" className={path === "/contact" ? "active" : ""}>
                         Contact
-                    </Link>
+                    </a>
                 </li>
                 <li className="py-1">
-                    <Link href="/blog" className={path === "/blog" ? "active" : ""}>
+                    <a href="/blog" className={path === "/blog" ? "active" : ""}>
                         Blog
-                    </Link>
+                    </a>
                 </li>
             </ul>
         </nav>
