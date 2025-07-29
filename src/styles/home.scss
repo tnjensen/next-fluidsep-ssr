@@ -56,6 +56,10 @@
             transform: translateY(-50%);
             left: 30%;
 
+             @media screen and (orientation: landscape) and (max-width: 768px) {
+                top: 80%;
+            }
+            
             @include tablet {
                 width: 20%;
                 padding: 20px 30px;
@@ -68,9 +72,6 @@
                 left: 30%;
             }
 
-            @media screen and (orientation: landscape) {
-                top: 80%;
-            }
             &:hover {
                 color: var(--light-grey);
                 background-color: var(--blue);
