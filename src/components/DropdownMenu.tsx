@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useRef, useState } from "react";
+import { useState } from "react";
 export default function DropdownMenu() {
     const path = usePathname();
     const [isMenuOpen, setIsMenuOpen] = useState(false);

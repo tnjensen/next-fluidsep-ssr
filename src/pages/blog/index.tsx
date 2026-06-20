@@ -18,7 +18,7 @@ export default function Blog({data}: {data}) {
                 {data && data.map((item) => (
                     <div className="card" key={item.id}>
                     <h2 dangerouslySetInnerHTML={{__html: item.title.rendered}} className="text-2xl"></h2>
-                    {item._embedded && <img src={item?._embedded['wp:featuredmedia'][0]?.source_url} alt={item?._embedded['wp:featuredmedia'][0]?.alt_text} width={300} height={500} /> }
+                    {item._embedded && <img src={item?._embedded['wp:featuredmedia'][0]?.source_url} alt={item?._embedded['wp:featuredmedia'][0]?.alt_text} width={300} height="auto" /> }
                     <span dangerouslySetInnerHTML={{__html: item.content.rendered}}></span>
                     </div>
                 ))}
